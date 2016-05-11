@@ -1,0 +1,38 @@
+#groups1{
+	position:relative;
+	transform-style:preserve-3d;
+	width:100%;
+	height:300px;
+	margin-top:100px;
+	transition:transform 1s;
+}
+p{
+	position:absolute;
+	left:50%;
+	margin-left:-150px;
+	width:300px;
+	height:300px;
+}
+.demo{
+	position: relative;
+	perspective:5000px;
+	background-color:rgba(100,100,100,.2);
+}
+p:nth-child(1){
+	transform:rotateY(0deg) translateZ(150px);
+}
+p:nth-child(2){
+	transform:rotateY(90deg) translateZ(150px);
+}
+p:nth-child(3){
+	transform:rotateY(180deg) translateZ(150px);
+}
+p:nth-child(4){
+	transform:rotateY(270deg) translateZ(150px);
+}
+p:nth-child(5){
+	transform:rotateX(90deg) translateZ(150px);
+}
+p:nth-child(6){
+	transform:rotateX(270deg) translateZ(150px);
+}
